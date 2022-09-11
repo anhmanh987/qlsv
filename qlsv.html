@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		sv =[]
+		sv.push(
+		{
+			'fullname': 'TRAN VAN A',
+			'age': 20,
+			'email': 'b@gmail.com',
+			'address': 'Ha Noi'
+		})
+		sv.push(
+		{
+			'fullname': 'TRAN VAN B',
+			'age': 20,
+			'email': 'b@gmail.com',
+			'address': 'Ha Noi'
+		})
+		sv.push(
+		{
+			'fullname': 'TRAN VAN C',
+			'age': 20,
+			'email': 'b@gmail.com',
+			'address': 'Ha Noi'
+		})
+	</script>
+<table border="1" cellpadding="3">
+	<tr>
+		<td>STT</td>
+		<td>Ten</td>
+		<td>Tuoi</td>
+		<td>Dia Chi</td>
+		<td>Email</td>
+	</tr>
+<script type="text/javascript">
+	for (var i = 0; i < sv.length; i++) {
+		document.writeln(`<tr>
+			<td>${i+1}</td>
+			<td>${sv[i].fullname}</td>
+			<td>${sv[i].age}</td>
+			<td>${sv[i].address}</td>
+			<td>${sv[i].email}</td>
+		</tr>`)
+	}
+</script>
+</body>
+</html>
